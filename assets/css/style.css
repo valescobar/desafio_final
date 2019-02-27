@@ -1,0 +1,238 @@
+/* Media */
+@media screen and (max-width: 479px){
+    header a {
+        padding: 10px 8px !important;
+        font-size: 16px !important;
+        margin: 0 !important;
+    }
+    h1{
+        font-size: 32px !important;
+        padding-top: 25vh !important;
+    }
+    .navbottom{
+        bottom: -13px !important;
+    }
+    .right{
+        text-align: right !important;
+    }
+    .categoria{
+        margin: 0 !important;
+        height: 25vh !important;
+        background-color: white !important;
+    }
+    .caption{
+        margin: auto !important;
+        margin-top: 20px !important;
+        width: 95% !important;
+        padding: 7% !important;
+    }
+    .caption h2{
+        display: none;
+    }
+    .caption p{
+        text-align: center;
+    }
+    .swiper-container img{
+        max-width: 100% !important;
+    }
+    .eye{
+        left: 2px !important;
+    }
+    .swiper-container {
+      height: 40vh !important;
+    }
+    h3{
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 812px) and (orientation: landscape){
+    h1{
+        font-size: 32px !important;
+        padding-top: 18vh !important;
+    }
+    header a {
+        font-size: 13px !important;
+    }
+    .right{
+        text-align: right !important;
+    }
+
+}
+/* Body */
+html,body{
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+/* nav */
+.navtop, .navbottom{
+    background-color: transparent !important;
+    width: 100%;
+}
+.navbottom{
+    position: absolute;
+    bottom:0;
+}
+
+.navbottom ul.nav{
+    display: inline-block;
+}
+header a{
+    color: white !important;
+    text-decoration: none;
+}
+.nav>li>a:hover{
+    background-color: transparent;
+    color: #FF461D !important;
+}
+.nav>li>a:focus{
+    background-color: transparent;
+    border: 1px white;
+    border-style: double;
+}
+.section-children{
+    height: 70vh;
+}
+
+.no-overflow-x{
+    overflow-x: hidden;
+}
+/* header */
+h1{
+    font-size: 40px;
+    margin: 0;
+    padding-top: 200px;
+}
+header{
+    padding-top: 15px;
+    font-family: 'Staatliches', cursive;
+    font-size: 16px;
+    color: white;
+    height: 100%;
+    /* min-height: 100vh; */
+    background-image: url(../img/negro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.1) 20%, black);
+}
+
+/* section */
+h2{
+    font-family: 'Staatliches', cursive;
+}
+.categoria{
+    background-color: #aaa;
+    height: 70vh;
+}
+.caption{
+    margin: 19vh auto;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+.muestra{
+    background-size: cover;
+    box-sizing: border-box;
+}
+/* swiper */
+.swiper-container img{
+    max-height: 100%;
+}
+.swiper-container {
+  width: 100%;
+  height: 70vh;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.eye{
+    position: absolute;
+    color: #504a48;
+    z-index: 10;
+    background-color: white;
+    padding: 3px;
+    border-radius: 3px;
+    left: 20px;
+    top: 170px;
+}
+.eye:hover{
+    color:#FF461D;
+    cursor: pointer;
+}
+
+.overlay{
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    padding: 6px;
+    border-radius: 5px;
+    z-index: 5;
+    font-size: 1.4rem;
+    overflow: hidden;
+    transition: opacity 0.3s easy-in;
+}
+.overlay h3{
+    font-family: 'Staatliches';
+}
+.displaynone{
+    display: none;
+}
+.swiper-container-v {
+  background: #eee;
+}
+
+.swiper-pagination-bullet-active{
+    background: #FF461D;
+}
+
+.swiper-pagination-v {
+    bottom: 30px !important;
+}
+.contacto{
+    background-color: grey;
+    font-family: 'Staatliches';
+    color: white;
+}
+.contacto a{
+    color: white
+}
+label{
+    font-weight: 100;
+    font-size: 14px;
+}
+.form-control{
+    color: #9e9d9d;
+}
+
+/* MAPA */
+#map {
+    height: 80vh;
+    width: 100%;
+}
